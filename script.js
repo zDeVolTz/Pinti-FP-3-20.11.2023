@@ -17,7 +17,7 @@ if (RandomValue <= 0.166) {
     alert(`${StringThird} ${StringFirst} ${StringSecond}`);
 }
 
-const FiveDigitNumber = prompt("Введіть пятизначное число");
+const FiveDigitNumber = prompt("Введіть п'ятизначне число");
 const StringSeparateNumbers = (FiveDigitNumber - FiveDigitNumber % 10000)/10000 + " " + (FiveDigitNumber % 10000 - FiveDigitNumber % 1000)/1000 + " " + (FiveDigitNumber % 1000 - FiveDigitNumber % 100)/100 + " " + (FiveDigitNumber % 100 - FiveDigitNumber % 10)/10 + " " + FiveDigitNumber % 10;
 alert (StringSeparateNumbers); // выводим через матемематические преобразования
 alert(FiveDigitNumber.split('').join(" ")); // выводим через разбитие строки на символы
